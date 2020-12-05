@@ -13,6 +13,8 @@ def createFolder(directory):
 def collectFiles(path):
     # Receives path from the command line and changes \\ to /    
     path = sys.argv[1].replace('\\', '/')
+    # Removes quotes around path value
+    path_ = path.strip("'")
 
     fileExtansions = ['txt', 'docx', 'pdf', 'jpg','mp4', 'png', 'py', 'bmp']  
     for file in desktopFiles:
