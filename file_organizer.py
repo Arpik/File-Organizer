@@ -11,9 +11,9 @@ def createFolder(directory):
 
 # Collects files by putting them into appropriate folders.
 def collectFiles(path):
-    # Receives path from the command line and changes \\ to / 
+    # Receives path from the command line and changes \\ to /   
     path = sys.argv[1].replace('\\', '/')
-    
+
     fileExtansions = ['txt', 'docx', 'pdf', 'jpg','mp4', 'png', 'py', 'bmp']
     for file in desktopFiles:
         for extention in fileExtansions:
